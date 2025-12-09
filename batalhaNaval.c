@@ -9,6 +9,39 @@ int main() {
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
+        int tabuleiro[10][10];
+
+    for(int x = 0; x< 10; x++){
+        for(int y = 0; y < 10; y++){
+            tabuleiro[x][y] = 0;
+        };
+    };
+    tabuleiro[0][1] = 3;
+    tabuleiro[0][2] = 3;
+    tabuleiro[0][3] = 3;
+
+    tabuleiro[3][4] = 3;
+    tabuleiro[3][5] = 3;
+    tabuleiro[3][6] = 3;
+
+    tabuleiro[7][5] = 3;
+    tabuleiro[8][5] = 3;
+    tabuleiro[9][5] = 3;
+
+    tabuleiro[3][9] = 3;
+    tabuleiro[4][9] = 3;
+    tabuleiro[5][9] = 3;
+
+    tabuleiro[1][2] = 3;
+    tabuleiro[1][3] = 3;
+    tabuleiro[1][4] = 3;
+
+for(int x = 0; x < 10; x++){
+    printf("\n");
+    for(int y = 0; y < 10; y++){
+        printf("%i,",tabuleiro[x][y]);
+    };
+};    
 
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.

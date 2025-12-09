@@ -16,6 +16,7 @@ int main() {
             tabuleiro[x][y] = 0;
         };
     };
+    //Navios verticais
     tabuleiro[0][1] = 3;
     tabuleiro[0][2] = 3;
     tabuleiro[0][3] = 3;
@@ -23,19 +24,26 @@ int main() {
     tabuleiro[3][4] = 3;
     tabuleiro[3][5] = 3;
     tabuleiro[3][6] = 3;
-
-    tabuleiro[7][5] = 3;
-    tabuleiro[8][5] = 3;
-    tabuleiro[9][5] = 3;
-
+    
+    //Navios Horizontais
     tabuleiro[3][9] = 3;
     tabuleiro[4][9] = 3;
     tabuleiro[5][9] = 3;
 
-    tabuleiro[1][2] = 3;
-    tabuleiro[1][3] = 3;
-    tabuleiro[1][4] = 3;
+    tabuleiro[7][5] = 3;
+    tabuleiro[8][5] = 3;
+    tabuleiro[9][5] = 3;
+    
+    //Navios em diagonais
+    tabuleiro[4][2] = 3;
+    tabuleiro[5][3] = 3;
+    tabuleiro[6][4] = 3;
 
+    tabuleiro[9][0] = 3;
+    tabuleiro[8][1] = 3;
+    tabuleiro[7][2] = 3;
+
+    
 for(int x = 0; x < 10; x++){
     printf("\n");
     for(int y = 0; y < 10; y++){
